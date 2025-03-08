@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-btn:hover{
+    border-bottom: 2px solid white;
+    transition: 0.1s;
+}
+.project-card:hover{
+    box-shadow: 10px 10px 5px #241b3f;
+    transition: 0.2s;
+}
+.msg-button:hover{
+   box-shadow: 5px 5px 5px #18122B; 
+   font-weight: bold;
+}
+.res-btn:hover{
+    box-shadow: 7px 7px 7px #18122B;
+    width: 210px;
+    height: 55px;
+    transition: 0.2s;
+}
+.skill-card:hover{
+    box-shadow: 15px 15px 15px #18122B;
+    transition: 0.3s;
+}
+.img-con:hover{
+    box-shadow: 10px 10px 10px #18122B;
+    border: 1px solid white;
+    transition: 0.2s;
+}
