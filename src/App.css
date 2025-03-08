@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+
+.Routes{
+  display: flex;
+}
+.navCon{
+  margin: 15px 25px 15px 25px;
+  color: #fff;
+}
+.home{
+  height: 100vh;
+}
