@@ -1,7 +1,4 @@
 import React from "react";
-function  submitClick(){
-
-}
 
 function ContactForm(){
 
@@ -47,5 +44,4 @@ function ContactForm(){
         </div>
     );
 }
-
 export default ContactForm;

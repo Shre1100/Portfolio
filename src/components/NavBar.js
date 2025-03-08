@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function NavBar(){
     return (
     <div className="h-[7%] flex justify-between bg-[#18122B]  w-[100%] fixed z-10">
