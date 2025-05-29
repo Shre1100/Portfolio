@@ -1,5 +1,6 @@
 import React from "react";
 import SkillCard from "./skillcard";
+import AnimateHr from '../AnimateHr';
 
 const skills = [{title: "C", icon:"https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"},
     {title:"C++", icon:"https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"},
@@ -20,21 +21,26 @@ const skills = [{title: "C", icon:"https://upload.wikimedia.org/wikipedia/common
 function Skills(){
     return(
         // main container 
-        <div id="Skills" className="bg-[#443C68] p-8">
+        <div id="Skills" className="bg-gradient-to-br from-[#18122B] via-[#2A1E4A] to-[#3C2A6F] w-full min-h-[100vh] p-8">
             {/* sub-container  */}
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col w-full max-sm:mt-10 justify-center">
                 {/* heading container  */}
-                <div className="flex flex-col justify-center mb-4">
+                <div className="flex flex-col justify-center md:mt-20 lg:mt-10 w-full mb-4">
                     <h2 className="text-white text-[35px] lg:text-[45px] font-semibold p-4">My Skillset</h2>
+                    <AnimateHr className="h-[2px] w-full" duration={1000} />
                 </div>
 
                 {/* skill- card conatiner  */}
-                <div className="flex-row flex flex-wrap justify-center mb-6">
-                    {skills.map((skill)=>{
-                        return(<SkillCard
+                <div className="flex-row w-full flex flex-wrap gap-5 lg:gap-10 justify-center mb-6">
+                    {skills.map((skill,idx)=>{
+                        return(
+                            <div className="h-[100px] w-[300px]" key={idx}>
+                                <SkillCard
                             title = {skill.title}
                             icon = {skill.icon}
-                            />);
+                            />
+                            </div>
+                        );
                     })}
                 </div>
             </div>

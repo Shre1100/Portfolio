@@ -3,7 +3,7 @@ import React from "react";
 function SkillCard(props){
     return(
         // main div 
-        <div className="skill-card h-[100px] w-[300px] lg:w-[20%] flex justify-center flex-row bg-[#635985] m-4 items-center rounded-lg shadow-2xl cursor-pointer">
+        <div className="skill-card h-[100px] w-[300px] flex justify-center flex-row bg-[#635985] lg:m-4 items-center rounded-lg hover:scale-105 duration-150 cursor-pointer">
             
             {/* icon image div  */}
             <div className=" w-[40%]">

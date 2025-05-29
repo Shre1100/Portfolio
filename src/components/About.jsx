@@ -1,15 +1,16 @@
 import React from "react";
+import AnimateHr from "./AnimateHr";
 
 function About(){
     return(
-        <div id="About" className="bg-[#18122B] text-white flex flex-col justify-evenly">
+        <div id="About" className="bg-gradient-to-br from-[#18122B] via-[#2A1E4A] to-[#3C2A6F] text-white min-h-[100vh] flex gap-10 flex-col justify-start">
             {/* Heading  */}
-            <div className="mb-5 mt-5">
+            <div className="m-5 mt-20">
                 <h1 className="text-[35px] font-semibold lg:text-[45px] p-3">About Me</h1>
+                <AnimateHr className="h-[2px] w-full" duration={1000} />
             </div>
-
             {/* Content  */}
-            <div className="flex justify-center mb-8 p-3">
+            <div className="flex justify-center items-center lg:mx-5 mb-8 p-3">
                 {/* Summary  */}
                 <p className="w-[80%] text-xl">
                 I am currently pursuing B.Tech in Computer Science with specialization in Cloud Computing and Machine Learning
